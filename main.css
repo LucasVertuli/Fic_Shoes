@@ -108,7 +108,7 @@ li p {
 button {
     margin-top: 16px;
     border-radius: 12px;
-    background-color: rgba(0, 255, 0, 0.4);
+    background-color: rgba(0, 0, 255, 0.3);
     cursor: pointer;
     height: 30px;
     width: 100%;
