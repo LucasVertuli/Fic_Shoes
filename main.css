@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.container{
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: blue;
+    color: #fff;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+header .container,
+#sobre-a-loja .container{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    padding: 10px;
+}
+
+header li:hover{
+    text-decoration: underline;
+}
+
+header h1,
+header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+#sobre-a-loja .container {
+    align-items: flex-start;
+}
+
+#sobre-a-loja {
+    padding: 20px;
+}
+
+#sobre-a-loja img {
+    height: 400px;
+    width: 100%;
+}
+
+#sobre-a-loja h2 {
+    border-bottom: 3px solid black;
+    margin-bottom: 16px;
+}
+
+.conteudo {
+    margin-left: 25px;
+}
+
+#produtos h2 {
+    margin-top: 50px;
+    text-align:center;
+    border-bottom: 3px solid black;
+}
+
+.lista-produtos li {
+    height: 100%;
+    max-width: 100%;
+}
+
+.lista-produtos img {
+    margin-top: 25px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+#produtos .container .lista-produtos{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    column-gap: 2%;
+}
+
+strong {
+    font-size: 18px;
+}
+
+#produtos p {
+    font-size: 14px;
+}
+
+li p {
+    margin-top: 4px;
+}
+
+button {
+    margin-top: 16px;
+    border-radius: 12px;
+    background-color: rgba(0, 255, 0, 0.4);
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+}
+
+footer {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: blue;
+    padding: 16px;
+    margin-top: 300px;
+    text-align: center;
+}
+
+@media screen and (max-width:640px){
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+    #sobre-a-loja .container {
+        display: block;
+        max-width: 100%;
+    }
+    .conteudo {
+        margin: 0 0;
+    }
+    .lista-produtos img {
+        margin-top: 25px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    #produtos .container .lista-produtos{
+        margin-top: 35px;
+        display: block;
+    }
+
+    strong {
+        font-size: 22px;
+    }
+
+    #produtos p {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width:641px) and (max-width:1023px){
+
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+    #sobre-a-loja .container {
+        display: block;
+        max-width: 100%;
+    }
+
+    .conteudo {
+        margin: 0 0;
+    }
+
+    .lista-produtos img {
+        max-width: 100%;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    #produtos .container .lista-produtos{
+        padding: 20px;
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        column-gap: 5%;
+    }
+
+    strong {
+        font-size: 20px;
+    }
+
+    #produtos p {
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
